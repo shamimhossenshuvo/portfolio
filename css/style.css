@@ -1,0 +1,31 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+}
+
+body{
+  background-color: #222;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Nabbar styling */
+.navbar{
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+
+}
+
+.Navbar-container{
+ display: flex;
+ align-items: center;
+ padding-top: 1rem;
+
+}
+
+.nav-left{
+ display: flex;
+
+}
