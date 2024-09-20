@@ -11,10 +11,14 @@ body{
 }
 
 /* Nabbar styling */
-.navbar{
+.Navbar{
  position: sticky;
  top: 0;
  z-index: 1000;
+ background-color: rgba(34, 34, 34, 0.25);
+ backdrop-filter: blur(6px);
+ border-bottom: 2px solid #222;
+
 
 }
 
@@ -29,3 +33,49 @@ body{
  display: flex;
 
 }
+.logo{
+ border-radius: 25%;
+ margin: 0 1rem;
+
+}
+
+.nav-name{
+ font-size: 20px;
+ line-height: 1.5rem;
+ letter-spacing: 0.2rem;
+
+}
+
+.nav-right-container{
+ margin-left: auto;
+
+}
+
+.nav-items-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-items{
+  margin: 1rem;
+  list-style-type: none;
+}
+.nav-items-links{
+ text-decoration: none;
+
+}
+
+.nav-items-links:hover{
+  color: rgb(238, 255, 0);
+}
+
+@media (max-width: 873px ) {
+  .Navbar-container{
+    display: block;
+  }
+
+  .nav-items-container{
+    padding: 0;
+  }
+}
+
