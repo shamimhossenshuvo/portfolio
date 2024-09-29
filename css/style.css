@@ -148,6 +148,7 @@ body{
 }
 }
 
+/* Resume section */
 .tittle{
   text-align: center;
   font-size: 3rem;
@@ -178,6 +179,10 @@ body{
   justify-content: center;
 }
 
+.resume-img{
+  margin-right: 10rem;
+}
+
 .resume-left {
   flex: 1;
 }
@@ -189,6 +194,7 @@ body{
   font-size: 1.25rem;
   line-height: 1.6rem;
   margin-bottom: 0;
+  align-items: center;
   
   
 }
@@ -220,6 +226,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1.75rem;
 }
 
 .round-div{
@@ -241,5 +248,21 @@ body{
   font-size: 0.875rem;
   line-height: 1.25rem;
   align-items: center;
-  right: 10px;
+}
+.resume-description{
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.resume-company{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-designation{
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: gray;
+  margin: 0;
 }
