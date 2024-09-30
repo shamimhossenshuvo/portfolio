@@ -354,6 +354,7 @@ body{
   grid-template-columns:repeat(2, minmax(0, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .cirtification-list{
@@ -388,10 +389,52 @@ body{
   margin: 0;
 }
 
-.cirtificate-org-name, .cirtificate-date, .cirtificate-link{
-
+.cirtificate-org-name,
+.cirtificate-date,
+.cirtificate-link{
   font-size: 12px;
   line-height: 16px;
   color: #777;
   margin: 8px 0;
+}
+
+.fa-solid{
+  margin-left: 8px;
+}
+
+.cirtificate-link{
+  text-decoration: none;
+}
+
+.cirtificate-link:hover{
+  text-decoration: underline;
+  color: rgb(179, 255, 0);
+}
+
+.certification-link{
+  text-decoration: none;
+}
+
+.cirtificate-btn{
+  padding: 1.20rem 2rem;
+  background-color: #333;
+  border: 2px solid #d5d5d5;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+  display: block; 
+  
+}
+
+.cirtificate-btn:hover{
+  background-color: #d5d5d5;
+  cursor: pointer;
+  color: #222;
+}
+
+a{
+  margin: 0;
+}
+
+.certificate-link-container{
+  margin-bottom: 20px; 
 }
