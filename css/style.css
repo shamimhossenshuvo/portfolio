@@ -497,3 +497,62 @@ body{
 .progress::-webkit-progress-value{
   background-color: rgb(59, 130, 246)
 }
+
+/* portfolio */
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-list{
+  margin-top: 2rem;
+  border: 1px solid #222;
+  border-radius: 1rem;
+}
+
+.project-list:hover{
+ background-color: #333;
+}
+.project-img{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.project-details{
+  padding-bottom: 20px;
+}
+
+.project-name{
+  padding-left: 1rem;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.project-link{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  color: #777;
+  text-decoration: none;
+}
+
+.project-description{
+  padding-left: 1rem;
+  line-height: 20px;
+  color: #777;
+}
+
+.project-link:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+#portfolio{
+  margin-top: 4rem;
+}
+
