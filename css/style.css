@@ -108,10 +108,15 @@ body{
 }
 
 @media (min-width: 992px) {
-  .container{
-    max-width: 960px;
+  .container {
+    max-width: 90%;
+  }
+  .resume-container .education-sub-container{
+    max-width: 80%;
   }
 }
+
+
 
 /* hero section */
 
@@ -176,7 +181,7 @@ body{
   gap: 30px;
   grid-template-columns: auto auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .resume-img{
@@ -215,8 +220,7 @@ body{
 .resume-list{
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-left: 1px solid #333;
 
@@ -224,6 +228,7 @@ body{
 
 .resume-duration-container{
   display: flex;
+  flex: 50%;
   justify-content: center;
   align-items: center;
   margin-left: 1.75rem;
@@ -241,17 +246,20 @@ body{
 
 .resume-duration{
   background-color: black;
+  border: #f5f5f5;
   width: auto;
   border-radius: 20px;
   margin: 1rem 0;
   padding: 8px 24px;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  align-items: center;
+  text-align: center;
+  white-space: nowrap;
 }
 .resume-description{
   margin-left: 2rem;
   text-align: left;
+  flex: 50%;
 }
 
 .resume-company{
@@ -269,45 +277,53 @@ body{
 
 .education-sub-container{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: auto auto;
   gap: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.education-sub-container .education-list{
+  position: relative;
+  border-left: 1px solid #333;
+
 }
 
 .education-list{
   display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  border-left: 1px solid #333;
 }
 
 .education-duration-container{
   display: flex;
-  align-items: center;
+  gap: 10px;
+  row-gap: 20px;
   justify-content: center;
-  margin-right: 1.75rem;
+  align-items: center;
+  margin-left: 1.75rem;
 }
 
 .education-duration{
   background-color: black;
+  width: auto;
+  border: #f5f5f5;
   border-radius: 20px;
-  align-items: left;
-  justify-content: center;
+  text-align: center;
   padding: 0.5rem 1.5rem;
   margin: 1rem 0;
-  font-size: 15px;
-  width: auto;
+  font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-right: 10rem;
+  white-space: nowrap;
 }
 
 .education-school{
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .education-address{
@@ -317,7 +333,11 @@ body{
   color: gray;
 }
 
-.education-left,.education-right{
+.education-left{
+  flex: 1;
+}
+
+.education-right{
   flex: 1;
 }
 
@@ -330,7 +350,7 @@ body{
 }
 
 .education-description{
-  margin-left: 2rem;
+  margin-left: 3rem;
   text-align: left;
 }
 
@@ -413,16 +433,17 @@ body{
 
 .certification-link{
   text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .cirtificate-btn{
-  padding: 1.20rem 2rem;
+  padding: 1rem 1.5rem;
   background-color: #333;
   border: 2px solid #d5d5d5;
   border-radius: 1.5rem;
-  margin: 0 auto;
+  margin: 0 0 4rem 0;
   display: block; 
-  
 }
 
 .cirtificate-btn:hover{
@@ -431,10 +452,48 @@ body{
   color: #222;
 }
 
-a{
-  margin: 0;
+.certificate-link-container{
+  margin-bottom: 32px 0px 0px;
+  display: flex;
+  justify-content: center;
 }
 
-.certificate-link-container{
-  margin-bottom: 20px; 
+/* skill section */
+.slills-sub-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.skills-progress-container{
+  margin: 1rem 0;
+}
+
+.skills-progress{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill{
+  font-size: 13px;
+}
+
+.parcentage{
+  font-size: 12px;
+  color: #888;
+}
+
+.progress{
+  height: 0.5rem;
+  width: 100%;
+  border: 2px solid #444;
+  border-radius: 0.5rem;
+  accent-color: #444;
+}
+
+.progress::-webkit-progress-value{
+  background-color: rgb(59, 130, 246)
 }
